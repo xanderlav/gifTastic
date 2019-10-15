@@ -1,9 +1,9 @@
-/* body { 
+body { 
     font-family: 'Long Cang', cursive;
     background-image: linear-gradient(169deg, rgba(61, 61, 61, 0.06) 0%, rgba(61, 61, 61, 0.06) 50%,rgba(54, 54, 54, 0.06) 50%, rgba(54, 54, 54, 0.06) 100%),linear-gradient(70deg, rgba(64, 64, 64, 0.05) 0%, rgba(64, 64, 64, 0.05) 50%,rgba(178, 178, 178, 0.05) 50%, rgba(178, 178, 178, 0.05) 100%),linear-gradient(212deg, rgba(123, 123, 123, 0.06) 0%, rgba(123, 123, 123, 0.06) 50%,rgba(177, 177, 177, 0.06) 50%, rgba(177, 177, 177, 0.06) 100%),linear-gradient(83deg, rgba(4, 4, 4, 0.06) 0%, rgba(4, 4, 4, 0.06) 50%,rgba(202, 202, 202, 0.06) 50%, rgba(202, 202, 202, 0.06) 100%),linear-gradient(323deg, rgba(154, 154, 154, 0.01) 0%, rgba(154, 154, 154, 0.01) 50%,rgba(135, 135, 135, 0.01) 50%, rgba(135, 135, 135, 0.01) 100%),linear-gradient(346deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 50%,rgba(190, 190, 190, 0.04) 50%, rgba(190, 190, 190, 0.04) 100%),linear-gradient(257deg, rgba(177, 177, 177, 0.04) 0%, rgba(177, 177, 177, 0.04) 50%,rgba(239, 239, 239, 0.04) 50%, rgba(239, 239, 239, 0.04) 100%),linear-gradient(135deg, #3dcf10,#19b250,#3a4f37);
-} */
+}
 
-/* dinamic background 
+/* dinamic background  */
 body {
 	margin: 0;
 	width: 100%;
@@ -53,63 +53,19 @@ a:hover {
 	text-decoration: none;
 	color: #ddd;
 }
-*/
 
-/*  Waves background */
-@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans');
-
-html, body {
-  height: 100%;
-  background-color: #D0F0FF;
+#gifSrch {
+	padding: 10px;
+	margin: auto;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+form {
+	align-self: auto;
 }
 
-h1 {
-  font-family: 'Calligraffitti';
-}
-
-h3 {
-  font-family: 'Open Sans';
-}
-
-.sea {
-  border: 3px dashed #000;
-}
-
-.LightWaves {
-  animation: lightwaves 2s infinite;
-  position: relative;
-}
-
-@keyframes lightwaves {
-    0%,100% { transform: translate(0,0); }
-    25%     { transform: translate(5px,5px); transform: scale(1.05); }
-    50%     { transform: translate(25px, 5px); }
-    75%     { transform: translate(12px,10px); transform: scale(1.05); }
-}
-
-.DarkWaves {
-  animation: darkwaves 3.8s infinite;
-}
-
-@keyframes darkwaves {
-    0%,100% { transform: translate(0,0); }
-    25%     { transform: translate(25px, 5px); transform: scale(1.05); }
-    50%     { transform: translate(12px,10px); }
-    75%     { transform: translate(5px,5px); }
-}
-
-.WhiteWaves {
-  animation: whitewaves 4s alternate ease infinite;
-}
-
-@keyframes whitewaves {
-    0% { transform: translate(0,25px); }
-    100%     { transform: translate(25px,35px); }
+#buttons {
+	padding: 10px;
+	margin: auto;
+	height: 400px;
+	width: 400px;
 }
