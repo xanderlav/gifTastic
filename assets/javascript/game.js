@@ -4,7 +4,7 @@ var idBtn= "gifSrch_";
 var arrBotns = [];
 var txtQrys = [];
 var apiKy = "2duYbYAookqwoNvzsKeis23nvpvStsJV";
-var limite = 10;
+var limit = 10;
 var qrySearch = "";
 
 $(document).ready(function(){
@@ -24,7 +24,7 @@ function addNewButton(qry){
 	}
 }
 
-
+// According to button push will call API w/text to search
 function qryTxtBtns() {
     for(var i = 0; i < txtQrys.length; i++) {
         var newButton = $("<button>");
