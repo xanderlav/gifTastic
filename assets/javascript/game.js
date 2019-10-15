@@ -43,6 +43,7 @@ function qryTxtBtns() {
         });    
 }
 
+// This function calls API to retrieve gifs related with text typed
 function getsGifs(qryTxt){
 	$.ajax({
 		url: "https://api.giphy.com/v1/gifs/search?q=" + qryTxt + 
@@ -52,10 +53,10 @@ function getsGifs(qryTxt){
 		response.data.forEach(function(element){
 		newDiv = $("<div>");
 		newDiv.addClass("gifDiv");
-		newDiv.append("<p>Rating: " + element.rating.toUpperCase() + "</p>");
-		var newImage = $("<img src = '" + element.images.fixed_height_still.url + "'>");
+        var newImage = $("<img src = '" + element.images.fixed_height_still.url + "' style='height:250px; width:250px'" + "/>");
 		newImage.addClass("gif-image");
-		newImage.attr("state", "still");
+        newImage.attr("state", "still");
+        newImage.attr("class", "");
 		newImage.attr("still-data", element.images.fixed_height_still.url);
 		newImage.attr("animated-data", element.images.fixed_height.url);
 		newDiv.append(newImage);
